@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="dashbaord.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/> 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>  -->
+
 </head>
 <body>
 
@@ -72,14 +74,17 @@
                 <div class="col" id="graph1">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     <span>Portfolio 1</span>
+                    <canvas id="gp1" style="width:100%;max-width:600px"></canvas>
                 </div>
                 <div class="col" id="graph2">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     <span>Portfolio 2</span>
+                    <canvas id="gp2" style="width:100%;max-width:600px"></canvas>
                 </div>
                 <div class="col" id="graph3">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                    <span>Portfolio 3</span>               
+                    <span>Portfolio 3</span>
+                    <canvas id="gp3" style="width:100%;max-width:600px"></canvas>               
                 </div>
             </div>
 
@@ -88,6 +93,7 @@
                 <div class="col-7" id="ghaph4">
                     <i class="fa fa-signal" aria-hidden="true"></i>
                     <span>Chart</span>   
+                    <div id="vis"></div>
                 </div>
 
                 <div class="col" id="transactions">

@@ -30,3 +30,85 @@ if (chDonut1) {
 
 
 
+var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+var yValues = [2,3,12,13,9,9,10,11,14,14,15];
+
+new Chart("gp1", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "violet",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false },
+    scales: {
+      yAxes: [{
+        ticks: {
+           display: false
+        }
+     }],
+    }
+  }
+});
+
+
+var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+var yValues = [2,3,12,13,9,9,10,11,14,14,15];
+
+new Chart("gp2", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "violet",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{
+        ticks: {
+           display: false
+        }
+     }],
+    }
+  }
+});
+
+
+var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+var yValues = [2,3,12,13,9,9,10,11,14,14,15];
+
+new Chart("gp3", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "violet",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{
+        ticks: {
+           display: false
+        }
+     }],
+    }
+  }
+});
