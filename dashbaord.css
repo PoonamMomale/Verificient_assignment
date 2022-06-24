@@ -1,0 +1,83 @@
+body{
+    background-color: #dfb7ff;
+}
+
+
+.btn{
+    background-color: white;
+    border-color: #8f00ff;
+    color: #8f00ff;
+    
+
+}
+
+.btn:hover,
+.btn:active{
+    color: white;
+    background-color: #8f00ff;
+}
+
+#firstrow{
+    margin: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#balance{
+    background-color: white;
+    margin:10px;
+    margin-left: 0px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+
+}
+
+#pie-chart{
+    background-color: white;
+    margin: 10px;
+    margin-right: 0px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+
+}
+
+#profile{
+    background-color: white;
+    
+}
+
+#graph1, #graph2, #graph3{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+#ghaph4, #transactions{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    height: 280px;
+    border-radius: 10px;
+
+}
+
+#invitation-btn{
+    color: white;
+    border-color: white;
+    background-color: #8f00ff;
+
+}
+#invitation-btn:hover{
+    background-color: #dfb7ff;
+    color: #8f00ff;
+}
+
+
+

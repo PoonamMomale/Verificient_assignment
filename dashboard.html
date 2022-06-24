@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cryptocurrency</title>  
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dashbaord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="row container-fluid">
+
+        <div class="col-9">
+             
+            <div class="row " id="firstrow">
+                <div class="col">
+                    <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 20px; margin-right: 5px;"></i>
+                    <span>Exchange Not Connected</span>
+                </div>
+                <div class="col-6 ">
+                    <span style="float: right;">Trial Subscription - 7 more days left</span>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary">Renew Subscription</button>
+                </div>      
+            </div>
+
+            <div class="row container-fluid">
+
+                <div class="col" id="balance">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <span>Balance</span>
+                    <span style="border: 1px solid white; box-shadow: 2px 2px 6px 0px gray; float: right; font-size: 15px;">2.043456BTC</span>
+                    </br>
+                    <i class="fa fa-usd" aria-hidden="true"></i>
+                    <span style="font-size: 28px; font-weight: bold;">25,200.97</span>
+                    <br/>
+                    <div class="row">
+                        <div class="col-4">
+                            <i class="fa fa-arrow-down" aria-hidden="true" style="color: grey;"></i>
+                            <span style="color: grey; font-size: 13px;">Invested</span>
+                            <p style="font-size: 20px; font-weight: bold;"><i class="fa fa-usd" aria-hidden="true"></i>10,458.00</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fa fa-arrow-up" aria-hidden="true" style="color: grey;"></i>
+                            <span style="color: grey; font-size: 13px;">% Profit</span>
+                            <p style="font-size: 20px; font-weight: bold;"><i class="fa fa-plus" aria-hidden="true"></i>60%</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fa fa-arrow-up" aria-hidden="true" style="color: grey;"></i>
+                            <span style="color: grey; font-size: 13px;">USD Profit</span>
+                            <p style="font-size: 20px; font-weight: bold;"><i class="fa fa-usd" aria-hidden="true"></i>15,648.38</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Add Exchange</button>
+                </div>
+
+                <div class="col" id="pie-chart">
+                    <div class="row py-2">
+                        <div class="col-md-4 py-1">
+                                    <canvas id="chDonut1"></canvas>   
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+
+            <div class="row container-fluid">
+                <div class="col" id="graph1">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <span>Portfolio 1</span>
+                </div>
+                <div class="col" id="graph2">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <span>Portfolio 2</span>
+                </div>
+                <div class="col" id="graph3">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <span>Portfolio 3</span>               
+                </div>
+            </div>
+
+            <div class="row container-fluid">
+
+                <div class="col-7" id="ghaph4">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    <span>Chart</span>   
+                </div>
+
+                <div class="col" id="transactions">
+
+                    <div class="row">
+                        <div class="col" style="margin-left: 20px; padding: 10px;">
+                            <i class="fa fa-exchange" aria-hidden="true"></i>
+                            <span style="font-weight: bold;">Transactions</span>
+                        </div>
+                        <div class="col" style="margin-left: 20px; padding: 10px;">
+                            <select name="USD" id="usd" style="color: #8f008f; font-weight: bold;">
+                                <option value="USD">See all</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row my-1">
+                        <div class="col-2">
+                            <i class="fa fa-arrow-down mx-3" aria-hidden="true" style="border-radius:50%; background-color: #dfb7ff; color:#8f008f; font-size: 20px; padding: 10px;"></i>
+                        </div>
+                        <div class="col">
+                            <p class="my-0 mx-0">Buy</p>
+                            <h6 class="text-muted">$250.00</h6>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted">Apr 20,2020</p>
+                        </div>
+                    </div>
+
+                    <div class="row my-1">
+                        <div class="col-2">
+                            <i class="fa fa-arrow-up mx-3" aria-hidden="true" style="border-radius:50%; background-color: #dfb7ff; color:#8f008f; font-size: 20px; padding: 10px;"></i>
+                        </div>
+                        <div class="col">
+                            <p class="my-0 mx-0">Sell</p>
+                            <h6 class="text-muted">$250.00</h6>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted">Apr 16,2020</p>
+                        </div>
+                    </div>
+
+                    <div class="row my-1">
+                        <div class="col-2">
+                            <i class="fa fa-arrow-up mx-3" aria-hidden="true" style="border-radius:50%; background-color: #dfb7ff; color:#8f008f; font-size: 20px; padding: 10px;"></i>
+                        </div>
+                        <div class="col">
+                            <p class="my-0 mx-0">Sell</p>
+                            <h6 class="text-muted">$250.00</h6>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted">Apr 10,2020</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="col-3 container" id="profile">
+
+            <div class="row">
+                <div class="col">
+                    <img src="forprofilecard.png" width="100px" height="100px" style="border-radius:50%; margin-top: 30px; margin-left: 50px;"/>
+                </div>
+                <div class="col" style="margin-top: 50px; margin-left:0;">
+                    <span style="font-size: 16px; font-weight:bold;">Good morning, Ivan!</span>
+                    <span style="color: #8f008f; font-weight: bold;">Settings</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" style="padding:20px; margin-left: 20px; font-size: 17px;">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <span style="font-weight: bold;">Recent activity</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" style="padding: 10px; margin-left: 20px; font-size: 15px;">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <span style="font-weight: bold;">1,837 USD = 0.084 BTC</span>
+                    <p style="color:grey; margin-left: 23px;">1 BTC = 8,468 USD</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" style="padding: 10px; margin-left: 20px; font-size: 15px;">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <span style="font-weight: bold;">1,837 USD = 0.084 BTC</span>
+                    <p style="color:grey; margin-left: 23px;">1 BTC = 8,468 USD</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" style="padding: 10px; margin-left: 20px; font-size: 15px;">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <span style="font-weight: bold;">1,837 USD = 0.084 BTC</span>
+                    <p style="color:grey; margin-left: 23px;">1 BTC = 8,468 USD</p>
+                </div>
+            </div>
+
+            <hr style="margin:10px;">
+
+            <div class="row">
+                <div class="col" style="margin-left: 20px; padding: 10px;">
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                    <span style="font-weight: bold;">Exchange</span>
+                </div>
+                <div class="col" style="margin-left: 20px; padding: 10px;">
+                    <select name="USD" id="usd" style="color: #8f008f; font-weight: bold;">
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12" style="margin-left: 20px;">
+                <div style="height: 25px; width:80%; border: 1px solid gainsboro;">1,700.00 USD</div>
+                </div>
+                   <i class="fa fa-exchange" aria-hidden="true" style="color:#8f008f; font-size:20px; text-align:center;"></i>
+                <div class="col-12" style="margin-left: 20px;">
+                <div style="height: 25px; width:80%; border: 1px solid gainsboro; margin-bottom: 30px;">0,674931 BTC</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card mx-5 my-2 text-center" style="width: 18rem; background-color: #8f00ff;">                  
+                    <i class="fa fa-envelope-open-o" aria-hidden="true" style="color:white; font-size: 60px;"></i>
+                    <div class="card-body text-center">
+                      <h5 class="card-title text-white mx-2">Invite customers and get $10 for each</h5>
+                      <button type="button" class="btn btn-primary" id="invitation-btn">Send Invitation</button>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="dashbaord.js"></script>
+
+</body>
+</html>
+
